@@ -10,7 +10,8 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <h1>Hello world</h1>
+        <asp:Login ID="login" runat="server" OnAuthenticate="login_Authenticate"></asp:Login>
+        <asp:Label id="lblmsg" runat="server"></asp:Label>
     </div>
     </form>
 </body>
